@@ -18,7 +18,6 @@
   --green: #17f084;
   --dark-green: #008a00;
   --fade-white: rgba(255, 255, 255, 0.2);
-  --gray-body-text: #515d66;
   --gray-body-text-2: #8d979e;
 }
 
@@ -130,6 +129,11 @@ img {
   line-height: 15px;
 }
 
+.fs-13 {
+  font-size: 13px;
+  line-height: 16.25px;
+}
+
 .fs-14 {
   font-size: 14px;
   line-height: 17.5px;
@@ -239,7 +243,7 @@ img {
 }
 
 .gray {
-  color: var(--gray-body-text);
+  color: var(--gray);
 }
 
 .gray-2 {
@@ -290,6 +294,11 @@ img {
 
 .pr-30 {
   padding-right: 30px;
+}
+
+.ptb-14 {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .op-0 {
@@ -350,6 +359,10 @@ img {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.gap-2 {
+  gap: 2px;
 }
 
 .gap-5 {

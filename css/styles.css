@@ -13,62 +13,18 @@
   width: 270px;
 }
 
-.header .top_links {
-  font-size: 13px;
-  line-height: 16.25px;
-  padding: 14px 0;
-}
-
-.header .top_links .notification p {
-  color: var(--gray);
-}
-
-.header .top_links .notification p a {
-  color: var(--black);
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.header .top_links .top_nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header .top_links .top_nav .navbar {
-  display: flex;
-  gap: 20px;
-}
-
-.header .top_links .top_nav .navbar a {
+.top_nav .navbar a {
   color: var(--black);
 }
 
-.header .top_links .top_nav .line {
+.top_nav .line {
   width: 1px;
   height: 14px;
   border: 1px solid var(--light-gray);
-  margin: 0 20px;
 }
 
-.header .top_links .top_nav .language {
-  display: flex;
-  gap: 20px;
-}
-
-.header .top_links .top_nav .language .option {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.header .top_links .top_nav .language .option object {
+.top_nav .navbar i {
   width: 10px;
-  height: 6px;
-}
-
-.middle_links {
-  padding: 14px 0;
 }
 
 .search_bar {
@@ -101,46 +57,22 @@
 .search_bar form .select_type {
   display: flex;
   align-items: center;
+  gap: 25px;
 }
 
-.search_bar form .select_type p {
-  font-weight: 600;
-}
-
-.header .arrow {
-  width: 14px;
-  height: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header .arrow object {
+.search_bar i {
   width: 10px;
-  height: 6px;
   color: var(--gray);
 }
 
-.header .middle_links .search_bar form .arrow {
-  margin-left: 25px;
-}
-
-.header .middle_links .search_bar form button {
-  background-color: var(--blue);
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 600;
+.search_bar form button {
   padding: 10px;
   border-radius: 0px 5px 5px 0px;
   width: 110px;
   height: 45px;
-  cursor: pointer;
 }
 
 .account {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 24px;
 }
 
@@ -635,6 +567,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .top_nav .navbar {
+    gap: 10px;
+  }
   .footer_layout {
     gap: 5px;
     padding: 20px;
@@ -669,5 +604,11 @@
   }
   .footer .last_box form {
     max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top_links {
+    display: none;
   }
 }
