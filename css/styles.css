@@ -663,4 +663,11 @@
   .body_bottom {
     height: 100%;
   }
+  .footer .last_box {
+    max-width: 300px;
+    height: auto;
+  }
+  .footer .last_box form {
+    max-width: 300px;
+  }
 }
