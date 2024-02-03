@@ -102,12 +102,12 @@
   margin: 0 20px;
 }
 
-.search_bar form label .select_type {
+.search_bar form .select_type {
   display: flex;
   align-items: center;
 }
 
-.search_bar form label .select_type p {
+.search_bar form .select_type p {
   font-weight: 600;
 }
 
