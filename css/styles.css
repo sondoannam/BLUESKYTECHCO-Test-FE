@@ -292,6 +292,16 @@
 
 .body_top .advertisement .slider {
   grid-area: header;
+  overflow: hidden;
+}
+
+.slider .slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slide img {
+  height: 100%;
 }
 
 .body_top .advertisement .slider .slide_content {
@@ -337,13 +347,6 @@
   height: 45px;
   padding: 10px;
   border-radius: 30px;
-  gap: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-transform: uppercase;
-  background-color: var(--white);
   cursor: pointer;
 }
 
@@ -547,9 +550,19 @@
 }
 
 .footer .method {
+  cursor: pointer;
   width: 51px;
   height: 30px;
-  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid var(--light-gray);
+}
+
+.footer .method .item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -557,7 +570,8 @@
 
 .footer .method img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  position: absolute;
 }
 
 /* responsive */
@@ -568,6 +582,12 @@
   }
   .search_bar {
     width: 100%;
+  }
+  .select_type {
+    width: 175px;
+  }
+  .middle_links .wrapper {
+    gap: 20px;
   }
   .logo {
     width: 100%;
@@ -582,7 +602,8 @@
   .body_top .menu {
     padding-left: 10px;
     padding-right: 10px;
-    height: auto;
+    height: 100%;
+    width: auto;
   }
   .slider,
   .advertisement #banner1,
@@ -609,9 +630,37 @@
   }
 }
 
-@media only screen and (max-width: 1024) {
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
   .footer_layout {
     gap: 5px;
     padding: 20px;
+  }
+  .body_top .menu {
+    display: none;
+  }
+  .body_top .advertisement {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "left main right";
+    gap: 5px;
+  }
+  .bottom_links .browse_cats {
+    margin-left: 0 !important;
+  }
+  .body_bottom .product {
+    padding: 10px;
+    min-width: 146px;
+  }
+  .body_bottom .special_offer {
+    padding: 20px;
+    width: 100%;
+  }
+  .body_bottom {
+    height: 100%;
   }
 }
