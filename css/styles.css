@@ -85,10 +85,6 @@
   height: 100%;
 }
 
-.search_bar form label {
-  display: flex;
-}
-
 .search_bar form .search_text {
   display: flex;
   margin-left: 25px;
