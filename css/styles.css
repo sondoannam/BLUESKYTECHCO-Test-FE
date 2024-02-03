@@ -309,7 +309,7 @@
 }
 
 .advertisement #banner1 {
-  background-image: url("/images/banner1.png");
+  background-image: url("/images/webg/banner1.webp");
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -321,7 +321,7 @@
   width: 151px;
 }
 .advertisement #banner2 {
-  background-image: url("/images/banner2.png");
+  background-image: url("/images/webg/banner2.webp");
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
@@ -333,7 +333,7 @@
   width: 167px;
 }
 .advertisement #banner3 {
-  background-image: url("/images/banner3.png");
+  background-image: url("/images/webg/banner3.webp");
   background-repeat: no-repeat;
   background-size: contain;
   width: 370px;
