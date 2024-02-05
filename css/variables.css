@@ -163,6 +163,9 @@ img {
   text-decoration: underline;
 }
 
+.hover-black:hover {
+  color: var(--black);
+}
 .hr {
   border: 1px solid var(--light-gray);
   width: 100%;

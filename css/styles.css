@@ -366,6 +366,10 @@
   max-width: 191px;
   height: auto;
   position: relative;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .label_sale {
@@ -397,6 +401,10 @@
 .special_img {
   max-width: 386px;
   position: relative;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .label_gift {
@@ -427,7 +435,7 @@
   margin-bottom: 7px;
 }
 
-.infor_box h2 {
+.infor_box h4 {
   font-size: 30px;
   font-weight: 500;
   line-height: 37.5px;
@@ -484,6 +492,7 @@
   width: 100%;
   height: auto;
   position: absolute;
+  object-position: center;
 }
 
 /* responsive */
