@@ -197,6 +197,7 @@
   width: 270px;
   height: 490px;
   padding: 30px;
+  flex-flow: column wrap;
 
   & .line {
     height: 1px;
@@ -205,6 +206,15 @@
 
   & div {
     width: 100%;
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & div + div {
+    border-top: 1.6px solid var(--light-gray);
   }
 
   & .menu_item_bold {
@@ -212,9 +222,9 @@
   }
 
   & .menu_item_select {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    & p {
+      width: 100%;
+    }
     & .arrow {
       width: 16px;
       height: 16px;
@@ -318,7 +328,7 @@
   font-weight: 600;
   line-height: 40px;
   letter-spacing: -0.03em;
-  & span {
+  & u {
     color: var(--green);
   }
 }
@@ -376,6 +386,7 @@
 
 .product_img {
   max-width: 191px;
+  height: auto;
   position: relative;
 }
 
